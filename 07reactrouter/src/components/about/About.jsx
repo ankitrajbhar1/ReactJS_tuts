@@ -1,6 +1,7 @@
 import React from "react";
-
+import { Outlet } from "react-router-dom";
 export default function About() {
+
     return (
         <div className="py-16 bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
@@ -27,6 +28,8 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </div>
+        
     );
 }
